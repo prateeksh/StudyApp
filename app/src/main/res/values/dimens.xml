@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_head">25dp</dimen>
+    <dimen name="pad_top">20dp</dimen>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157830439728",
+    "project_id": "studyapp-169418"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157830439728:android:6dd70e1235257751",
+        "android_client_info": {
+          "package_name": "com.example.prateek.studyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157830439728-c1s8dcvcnete73cfgok6ns0p4i3dss1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prateek.studyapp",
+            "certificate_hash": "570b5feb265dc33d23386eccc60bbce221c40f9a"
+          }
+        },
+        {
+          "client_id": "157830439728-qi629rbv1gtstpsq98vhoeob8mcg6hi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Dh1NdpUQ0zuDiPVm795vKzyEfTQUsws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
