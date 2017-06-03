@@ -59,7 +59,7 @@ public class StudentLogin extends AppCompatActivity implements GoogleApiClient.O
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://powerful-plateau-57637.herokuapp.com/")
+                .baseUrl("https://fast-river-85957.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
