@@ -1,6 +1,6 @@
 package com.example.prateek.studyapp.Service;
 
-import com.example.prateek.studyapp.Model.Student;
+import com.example.prateek.studyapp.Model.Registration;
 
 import java.util.List;
 
@@ -17,11 +17,11 @@ import retrofit2.http.Path;
 public interface TeacherService {
 
     @GET("/result")
-    Call<List<Student>> all();
+    Call<List<Registration>> all();
 
     @GET("/{name}")
-    Call<Student> get(@Path("name") String name);
+    Call<Registration> get(@Path("name") String name);
 
     @POST("/addnew")
-    Call<Student> update(@Body Student userDetail);
+    Call<Registration> update(@Body Registration userDetail);
 }

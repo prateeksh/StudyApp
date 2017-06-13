@@ -8,6 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.prateek.studyapp.Activity.StudentLogin;
+import com.example.prateek.studyapp.Activity.StudentRegistration;
+import com.example.prateek.studyapp.Activity.TeacherLogin;
+import com.example.prateek.studyapp.Activity.TeacherRegistration;
+
 /**
  * A placeholder fragment containing a simple view.
  */
@@ -21,8 +26,27 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View mView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        Button student = (Button) mView.findViewById(R.id.student);
+        Button student = (Button) mView.findViewById(R.id.button);
         student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), StudentRegistration.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button teacher = (Button) mView.findViewById(R.id.button2);
+        teacher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), TeacherRegistration.class);
+                startActivity(intent);
+            }
+        });
+
+        Button stu_login = (Button) mView.findViewById(R.id.student);
+        stu_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), StudentLogin.class);
@@ -30,9 +54,8 @@ public class MainActivityFragment extends Fragment {
             }
         });
 
-
-        Button teacher = (Button) mView.findViewById(R.id.teacher);
-        teacher.setOnClickListener(new View.OnClickListener() {
+        Button teach_login = (Button) mView.findViewById(R.id.teacher);
+        teach_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), TeacherLogin.class);

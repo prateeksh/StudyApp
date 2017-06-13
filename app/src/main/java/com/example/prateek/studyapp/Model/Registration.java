@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Prateek on 6/3/2017.
  */
 
-public class Student {
+public class Registration {
 
     @SerializedName("id")
     String id;
@@ -16,6 +16,13 @@ public class Student {
 
     @SerializedName("email")
     String email;
+
+    @SerializedName("password")
+    String password;
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public void setId(String id) {
         this.id = id;
@@ -41,4 +48,7 @@ public class Student {
         return name;
     }
 
+    public String getPassword() {
+        return password;
+    }
 }

@@ -19,18 +19,44 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/name"
-        android:id="@+id/student"
-        android:text="@string/stu_login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/pad_top"/>
+        android:text="Student Registration"
+        android:id="@+id/button"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="43dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/student"
+        android:text="@string/stu_login"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Registration"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:id="@+id/button2"
         android:layout_below="@+id/student"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/teach_login"
         android:id="@+id/teacher"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/pad_top"/>
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/student"
+        android:layout_alignStart="@+id/student" />
 
 </RelativeLayout>
