@@ -9,8 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.prateek.studyapp.Model.Student;
+import com.example.prateek.studyapp.Service.TeacherService;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -26,7 +29,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class TeacherLogin extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
+public class TeacherLogin extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private GoogleSignInOptions signInOptions;
     private GoogleApiClient mGoogleApiClient;
@@ -50,6 +53,14 @@ public class TeacherLogin extends AppCompatActivity implements GoogleApiClient.O
                         .setAction("Action", null).show();
             }
         });
+        Button b1 = (Button) findViewById(R.id.sign_in_teach);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -78,14 +89,14 @@ public class TeacherLogin extends AppCompatActivity implements GoogleApiClient.O
         Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
     }
 
-    @Override
+/*    @Override
     public void onClick(View view){
         int i = view.getId();
         if (i == R.id.sign_in_teach) {
             signIn();
 
         }
-    }
+    }*/
 
     public void signIn(){
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);

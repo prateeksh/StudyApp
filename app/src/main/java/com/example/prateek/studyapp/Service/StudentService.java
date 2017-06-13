@@ -1,4 +1,6 @@
-package com.example.prateek.studyapp;
+package com.example.prateek.studyapp.Service;
+
+import com.example.prateek.studyapp.Model.Student;
 
 import java.util.List;
 

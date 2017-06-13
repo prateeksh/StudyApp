@@ -1,4 +1,4 @@
-package com.example.prateek.studyapp;
+package com.example.prateek.studyapp.Model;
 
 import com.google.gson.annotations.SerializedName;
 
